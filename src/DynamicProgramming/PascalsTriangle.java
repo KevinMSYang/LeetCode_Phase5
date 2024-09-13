@@ -34,7 +34,7 @@ public class PascalsTriangle {
 			List<Integer> preRow = res.get(i - 1);
 			ArrayList<Integer> newRow = new ArrayList<>();
 			newRow.add(1);
-			for (int j = 1; j < i -1; j++) {
+			for (int j = 0; j < i -1; j++) {
 				newRow.add(preRow.get(j) + preRow.get(j+1));
 			}
 			newRow.add(1);
